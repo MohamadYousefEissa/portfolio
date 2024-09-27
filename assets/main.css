@@ -1,0 +1,28 @@
+:root {
+  --main-bg: #18181b;
+  --main-clr: #fff;
+  --sec-clr: #38bdf8;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--main-clr);
+  font-family: "NotoSans";
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  outline: 0;
+  color: var(--main-clr);
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url(./fonts/NotoSans.ttf) format("truetype");
+  font-display: swap;
+}
