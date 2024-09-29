@@ -1,13 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --main-bg: #18181b;
   --main-clr: #fff;
-  --sec-clr: #38bdf8;
+  --sec-clr: #07aaf8;
+  --font-regular: "NotoSans", sans-serif;
+  --font-bold: "NotoSans-bold", sans-serif;
+}
+::selection {
+  background: hsl(from var(--sec-clr) h s l / 0.5) !important;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #111;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+  border-radius: 12px;
+
+  &:hover {
+    background-color: #4a4a4a;
+  }
+}
+main {
+  margin-bottom: 5rem;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url(./fonts/NotoSans-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NotoSans-bold";
+  src: url(./fonts/NotoSans-Bold.ttf) format("truetype");
+  font-display: swap;
+}
 body {
   background-color: var(--main-bg);
   color: var(--main-clr);
-  font-family: "NotoSans";
+  font-family: var(--font-regular);
 }
 
 ul {
@@ -19,10 +53,4 @@ a {
   text-decoration: none;
   outline: 0;
   color: var(--main-clr);
-}
-
-@font-face {
-  font-family: "NotoSans";
-  src: url(./fonts/NotoSans.ttf) format("truetype");
-  font-display: swap;
 }

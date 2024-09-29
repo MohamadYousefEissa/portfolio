@@ -1,5 +1,7 @@
 <template>
   <UIGradient />
   <TheHeader />
-  <slot></slot>
+  <main>
+    <slot></slot>
+  </main>
 </template>

@@ -1,7 +1,6 @@
 <template>
   <canvas
     :style="{ isolation: 'isolate', height: '100%', width: '100%' }"
-    class="position-fixed z-n1"
     ref="canvasRef"
   ></canvas>
 </template>
@@ -46,3 +45,11 @@ onMounted(() => {
   });
 });
 </script>
+
+<style scoped>
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+</style>

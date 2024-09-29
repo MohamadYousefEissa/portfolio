@@ -1,13 +1,13 @@
 <template>
   <section>
-    <div class="text-center">
-      <h1>
-        Hello I'am Mohamad&nbsp;Yousef&nbsp;Eissa <br />Front-End Web Devoloper
+    <div class="flex flex-col items-center text-center p-1">
+      <h1 class="tracking-tight leading-tight w-full lg:w-10/12">
+        Hello I'am Mohamad Yousef Eissa Front-End Web Devoloper
       </h1>
-      <p>
+      <p class="w-full lg:w-8/12 xl:w-6/12 my-5">
         My journey in web development is driven by creativity and a keen eye for
-        detail, <br />
-        ensuring every project I work on is both functional and beautiful.
+        detail, ensuring every project I work on is both functional and
+        beautiful.
       </p>
       <div class="mt-5">
         <NuxtLink to="/projects"><button>My Projects</button></NuxtLink>
@@ -19,14 +19,14 @@
 
 <style scoped>
 section {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 h1 {
-  font-size: clamp(20px, 7vw, 72px);
-  font-weight: bold;
+  font-size: clamp(45px, 8vw, 72px);
+  font-family: var(--font-bold);
 }
 p {
-  opacity: 0.7;
+  color: hsl(from var(--main-clr) h s l / 0.6);
 }
 button {
   all: unset;
@@ -39,11 +39,9 @@ button {
 }
 a:nth-of-type(1) button {
   background-color: var(--sec-clr);
+  color: #000;
   &:hover {
     background-color: hsl(from var(--sec-clr) h s l / 0.8);
-  }
-  a {
-    color: #000;
   }
 }
 a:nth-of-type(2) button {
@@ -51,18 +49,17 @@ a:nth-of-type(2) button {
     background-color: #111;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   section {
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
 }
 @media screen and (max-width: 480px) {
   section {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
   p {
-    font-size: 10px;
-    padding: 1rem;
+    font-size: 14px;
   }
 }
 </style>
