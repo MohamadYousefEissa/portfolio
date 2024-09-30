@@ -9,7 +9,7 @@
         detail, ensuring every project I work on is both functional and
         beautiful.
       </p>
-      <div class="mt-5">
+      <div class="mt-5 flex gap-5">
         <NuxtLink to="/projects"><button>My Projects</button></NuxtLink>
         <NuxtLink to="/skills"><button>My Skills</button></NuxtLink>
       </div>
@@ -20,6 +20,7 @@
 <style scoped>
 section {
   margin-top: 10rem;
+  margin-bottom: 15rem;
 }
 h1 {
   font-size: clamp(45px, 8vw, 72px);
@@ -28,30 +29,24 @@ h1 {
 p {
   color: hsl(from var(--main-clr) h s l / 0.6);
 }
-span {
-}
+
 button {
-  all: unset;
-  padding: 10px 10px;
-  border-radius: 6px;
-  font-size: 15px;
-  font-weight: 600;
+  width: 110px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  margin-right: 1rem;
-  transition: background-color 0.2s;
-}
-a:nth-of-type(1) button {
-  background-color: var(--sec-clr);
-  color: #000;
+  border: 1px solid var(--sec-clr);
+  color: var(--sec-clr);
+  transition: all 0.2s;
   &:hover {
-    background-color: hsl(from var(--sec-clr) h s l / 0.8);
+    color: #000;
+    background-color: var(--sec-clr);
+    font-weight: bold;
   }
 }
-a:nth-of-type(2) button {
-  &:hover {
-    background-color: #111;
-  }
-}
+
 @media screen and (max-width: 1024px) {
   section {
     margin-top: 6rem;

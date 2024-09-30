@@ -50,6 +50,8 @@ onMounted(() => {
 canvas {
   position: fixed;
   top: 0;
+  left: 0;
+  height: 100vh !important;
   z-index: -1;
 }
 </style>

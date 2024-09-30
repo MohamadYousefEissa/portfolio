@@ -25,11 +25,15 @@
               <a
                 href="https://www.linkedin.com/in/mohamad-yousef-eissa-381a6429a/"
                 target="_blank"
-                ><Icon name="bi:linkedin"
-              /></a>
-              <a href="https://github.com/MohamadYousefEissa" target="_blank"
-                ><Icon name="bi:github"
-              /></a>
+              >
+                <Icon name="bi:linkedin" />
+              </a>
+              <a href="https://github.com/MohamadYousefEissa" target="_blank">
+                <Icon name="bi:github" />
+              </a>
+              <a href="https://wa.me/+963936552400" target="_blank">
+                <Icon name="bi:whatsapp" />
+              </a>
             </div>
           </div>
           <div class="w-full flex md:hidden justify-end">
@@ -92,6 +96,11 @@ li {
     a {
       display: grid;
       place-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      &:hover {
+        color: var(--main-clr);
+      }
     }
     a,
     li {

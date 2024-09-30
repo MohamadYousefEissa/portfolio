@@ -14,16 +14,15 @@ defineProps<{ percentValue: number }>();
   border-radius: 20px;
 }
 .outer {
-  border: 1px solid rgb(44, 44, 44);
-  height: 15px;
-  padding: 3px;
+  height: 9px;
+  border: 1px solid hsl(from var(--sec-clr) h s l / 0.2);
 }
 .inner {
   height: 100%;
   background-color: var(--sec-clr);
 }
 p {
-  color: gray;
+  color: hsl(from var(--sec-clr) h s l / 0.7);
   font-size: 14px;
   text-align: end;
 }

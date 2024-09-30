@@ -49,3 +49,24 @@ a {
   outline: 0;
   color: var(--main-clr);
 }
+a[href="https://neat.firecms.co"]
+{
+  display: none !important;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.4s;
+}
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(-5rem);
+}
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}

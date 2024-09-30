@@ -13,7 +13,6 @@ import skills from "~/store/skills";
         v-for="skill in skills"
         :label="skill.label"
         :icon="skill.icon"
-        :img-src="skill.imgSrc"
         :percent-value="skill.percentValue"
       />
     </div>

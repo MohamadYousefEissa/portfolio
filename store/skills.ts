@@ -16,7 +16,7 @@ export default [
   },
   {
     label: "Vuex",
-    imgSrc: "/vuex.svg",
+    icon: "icons:vuex",
     percentValue: 99,
   },
   {
@@ -45,6 +45,21 @@ export default [
     percentValue: 99,
   },
   {
+    label: "CSS",
+    icon: "devicon:css3",
+    percentValue: 99,
+  },
+  {
+    label: "HTML",
+    icon: "devicon:html5",
+    percentValue: 99,
+  },
+  {
+    label: "jQuery",
+    icon: "devicon:jquery-wordmark",
+    percentValue: 60,
+  },
+  {
     label: "Github",
     icon: "mdi:github",
     percentValue: 70,
@@ -61,18 +76,13 @@ export default [
   },
   {
     label: "Swiper",
-    imgSrc: "/swiper-logo.svg",
+    icon: "icons:swiper-logo",
     percentValue: 95,
   },
   {
     label: "GSAP",
-    imgSrc: "/gsap-logo.svg",
+    icon: "icons:gsap-logo",
     percentValue: 95,
-  },
-  {
-    label: "jQuery",
-    icon: "devicon:jquery-wordmark",
-    percentValue: 70,
   },
   {
     label: "Firebase",
@@ -82,16 +92,6 @@ export default [
   {
     label: "API",
     icon: "material-symbols:api",
-    percentValue: 99,
-  },
-  {
-    label: "CSS",
-    icon: "devicon:css3",
-    percentValue: 99,
-  },
-  {
-    label: "HTML",
-    icon: "devicon:html5",
     percentValue: 99,
   },
   {
@@ -108,7 +108,6 @@ export default [
 
 interface Skill {
   label: string;
-  icon?: string;
-  imgSrc?: string;
+  icon: string;
   percentValue: number;
 }
