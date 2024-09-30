@@ -8,8 +8,8 @@
         <div class="flex items-center">
           <div class="w-9/12">
             <NuxtLink to="/" id="logo" class="leading-none">
-              <div>MohamadYousefEissa</div>
-              <div>Portfolio</div>
+              <p>MohamadYousefEissa</p>
+              <p>Portfolio</p>
             </NuxtLink>
           </div>
           <div
@@ -56,8 +56,11 @@ nav {
   }
 }
 #logo {
-  font-family: var(--font-bold);
-  div:first-of-type {
+  width: fit-content;
+  font-weight: bold;
+  display: block;
+
+  p:first-of-type {
     font-size: 10px;
   }
 }

@@ -24,7 +24,7 @@ defineProps<{
           <NuxtImg
             :src="imgSrc"
             format="webp"
-            class="rounded mt-4"
+            class="rounded-md mt-4"
             densities="x1"
             :placeholder="[350]"
           />

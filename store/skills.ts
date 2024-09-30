@@ -1,0 +1,114 @@
+export default [
+  {
+    label: "Nuxt",
+    icon: "vscode-icons:file-type-nuxt",
+    percentValue: 90,
+  },
+  {
+    label: "Vue",
+    icon: "logos:vue",
+    percentValue: 95,
+  },
+  {
+    label: "Pinia",
+    icon: "logos:pinia",
+    percentValue: 99,
+  },
+  {
+    label: "Vuex",
+    imgSrc: "/vuex.svg",
+    percentValue: 99,
+  },
+  {
+    label: "TypeScript",
+    icon: "devicon:typescript",
+    percentValue: 90,
+  },
+  {
+    label: "JavaScript",
+    icon: "logos:javascript",
+    percentValue: 95,
+  },
+  {
+    label: "Sass",
+    icon: "logos:sass",
+    percentValue: 99,
+  },
+  {
+    label: "Tailwind CSS",
+    icon: "devicon:tailwindcss",
+    percentValue: 95,
+  },
+  {
+    label: "Bootstrap",
+    icon: "devicon:bootstrap",
+    percentValue: 99,
+  },
+  {
+    label: "Github",
+    icon: "mdi:github",
+    percentValue: 70,
+  },
+  {
+    label: "Nodejs",
+    icon: "devicon:nodejs",
+    percentValue: 50,
+  },
+  {
+    label: "Threejs",
+    icon: "skill-icons:threejs-dark",
+    percentValue: 45,
+  },
+  {
+    label: "Swiper",
+    imgSrc: "/swiper-logo.svg",
+    percentValue: 95,
+  },
+  {
+    label: "GSAP",
+    imgSrc: "/gsap-logo.svg",
+    percentValue: 95,
+  },
+  {
+    label: "jQuery",
+    icon: "devicon:jquery-wordmark",
+    percentValue: 70,
+  },
+  {
+    label: "Firebase",
+    icon: "logos:firebase",
+    percentValue: 70,
+  },
+  {
+    label: "API",
+    icon: "material-symbols:api",
+    percentValue: 99,
+  },
+  {
+    label: "CSS",
+    icon: "devicon:css3",
+    percentValue: 99,
+  },
+  {
+    label: "HTML",
+    icon: "devicon:html5",
+    percentValue: 99,
+  },
+  {
+    label: "C#",
+    icon: "devicon:csharp",
+    percentValue: 60,
+  },
+  {
+    label: "Python",
+    icon: "logos:python",
+    percentValue: 60,
+  },
+] as Skill[];
+
+interface Skill {
+  label: string;
+  icon?: string;
+  imgSrc?: string;
+  percentValue: number;
+}

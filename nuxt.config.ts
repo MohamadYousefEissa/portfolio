@@ -12,5 +12,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  app: {
+    head: {
+      title: "Mohamad Yousef Eissa Portfolio",
+    },
+  },
   modules: ["@nuxt/image", "@nuxt/icon", "@nuxt/ui"],
 });

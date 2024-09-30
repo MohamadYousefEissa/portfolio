@@ -6,8 +6,7 @@
   --main-bg: #18181b;
   --main-clr: #fff;
   --sec-clr: #07aaf8;
-  --font-regular: "NotoSans", sans-serif;
-  --font-bold: "NotoSans-bold", sans-serif;
+  --font-family: "NotoSans", sans-serif;
 }
 ::selection {
   background: hsl(from var(--sec-clr) h s l / 0.5) !important;
@@ -30,18 +29,14 @@ main {
 }
 @font-face {
   font-family: "NotoSans";
-  src: url(./fonts/NotoSans-Regular.ttf) format("truetype");
+  src: url(./fonts/NotoSans.ttf) format("truetype");
   font-display: swap;
 }
-@font-face {
-  font-family: "NotoSans-bold";
-  src: url(./fonts/NotoSans-Bold.ttf) format("truetype");
-  font-display: swap;
-}
+
 body {
   background-color: var(--main-bg);
   color: var(--main-clr);
-  font-family: var(--font-regular);
+  font-family: var(--font-family);
 }
 
 ul {

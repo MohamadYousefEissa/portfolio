@@ -38,6 +38,7 @@ onUnmounted(() => {
 <style scoped>
 .cover {
   width: 350px;
+  height: 260px;
 }
 .cover:before {
   background: radial-gradient(
@@ -45,5 +46,10 @@ onUnmounted(() => {
     var(--sec-clr) 0,
     transparent 100%
   );
+}
+@media screen and (max-width: 400px) {
+  .cover {
+    height: 70vw;
+  }
 }
 </style>
