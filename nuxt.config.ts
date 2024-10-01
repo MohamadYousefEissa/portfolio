@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
   icon: {
-    provider: "server",
+    serverBundle: "local",
     customCollections: [
       {
         prefix: "icons",
