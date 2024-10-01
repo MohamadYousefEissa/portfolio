@@ -3,14 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
-  image: {
-    dir: "assets/images",
-  },
   icon: {
+    provider: "server",
     customCollections: [
       {
         prefix: "icons",
-        dir: "assets/icons",
+        dir: "./assets/icons",
       },
     ],
   },
