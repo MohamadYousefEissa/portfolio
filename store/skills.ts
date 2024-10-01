@@ -56,7 +56,7 @@ export default [
   },
   {
     label: "jQuery",
-    icon: "devicon:jquery-wordmark",
+    icon: "devicon:jquery",
     percentValue: 60,
   },
   {
@@ -72,7 +72,7 @@ export default [
   {
     label: "Threejs",
     icon: "skill-icons:threejs-dark",
-    percentValue: 45,
+    percentValue: 40,
   },
   {
     label: "Swiper",

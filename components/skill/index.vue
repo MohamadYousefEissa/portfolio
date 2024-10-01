@@ -20,11 +20,10 @@ const percentValueHandler = computed(() => {
     <div>
       <Icon
         :name="icon"
-        :mode="'svg'"
         class="text-[15vw] md:text-7xl w-[72px] h-[72px] text-black dark:text-white"
       />
     </div>
-    <div class="self-end">
+    <div class="flex flex-col gap-1 self-end">
       <div>{{ label }}</div>
       <div><SkillRange :percent-value="percentValueHandler" /></div>
     </div>

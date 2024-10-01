@@ -5,8 +5,6 @@ export default defineNuxtConfig({
   css: ["~/assets/main.css"],
   image: {
     dir: "assets/images",
-    provider: "ipx",
-    domains: ["secure.woonuxt.com"],
   },
   icon: {
     customCollections: [

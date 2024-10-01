@@ -7,7 +7,7 @@ watch(hamburger, (checked) => {
   const navMenu = document.getElementById("nav-menu")! as HTMLElement;
   navMenu.classList.toggle("invisible");
   navMenu.classList.toggle("opacity-0");
-  navMenu.classList.toggle("translate-x-full");
+  navMenu.classList.toggle("translate-x-[80%]");
   if (checked) document.body.style.overflow = "hidden";
   else document.body.style.overflow = "auto";
 });

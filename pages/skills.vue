@@ -7,7 +7,7 @@ import skills from "~/store/skills";
       My Skills
     </h1>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-[6rem]"
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-[4rem] md:gap-[5rem]"
     >
       <Skill
         v-for="skill in skills"

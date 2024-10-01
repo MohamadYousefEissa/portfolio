@@ -13,7 +13,7 @@
             </NuxtLink>
           </div>
           <div
-            class="w-full flex justify-between invisible translate-x-full md:translate-x-0 md:visible opacity-0 md:opacity-100"
+            class="w-full flex justify-between invisible translate-x-[80%] md:translate-x-0 md:visible opacity-0 md:opacity-100"
             id="nav-menu"
           >
             <ul class="flex md:gap-6">
@@ -86,7 +86,7 @@ li {
     padding: 0 0 1rem 0;
     flex-direction: column;
     backdrop-filter: blur(10px);
-    transition: all 0.3s, transform 0.6s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   #nav-menu ul {
     display: grid;

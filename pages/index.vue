@@ -43,7 +43,7 @@ button {
   &:hover {
     color: #000;
     background-color: var(--sec-clr);
-    font-weight: bold;
+    font-weight: 600;
   }
 }
 
