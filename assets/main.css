@@ -3,27 +3,36 @@
 @tailwind utilities;
 
 :root {
-  --main-bg: #18181b;
-  --main-clr: #fff;
   --sec-clr: #07aaf8;
+  --main-bg: #111;
+  --main-clr: #fff;
+  --bar-bg: #1c1c1c;
+  --bar-clr: #3d3d3d;
   --font-family: "NotoSans", sans-serif;
+}
+html.light {
+  --main-bg: #fff;
+  --main-clr: #000;
+  --bar-bg: whiesmoke;
+  --bar-clr: #cdcdcd;
 }
 ::selection {
   background: hsl(from var(--sec-clr) h s l / 0.5) !important;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  background-color: #111;
+  width: 0.65vw;
+  background-color: var(--bar-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #3d3d3d;
-  border-radius: 12px;
+  background-color: var(--bar-clr);
+  border-radius: 8px;
 
   &:hover {
-    background-color: #4a4a4a;
+    background-color: hsl(from var(--bar-clr) h s l / 0.8);
   }
 }
+
 main {
   margin-bottom: 5rem;
 }

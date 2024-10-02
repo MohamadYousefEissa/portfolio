@@ -15,7 +15,10 @@ defineProps<{ percentValue: number }>();
 }
 .outer {
   height: 9px;
-  border: 1px solid hsl(from var(--sec-clr) h s l / 0.2);
+  border: 1px solid hsl(from var(--sec-clr) h s l / 0.8);
+}
+html.dark .outer {
+  border-color: hsl(from var(--sec-clr) h s l / 0.2);
 }
 .inner {
   height: 100%;

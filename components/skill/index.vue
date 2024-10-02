@@ -16,7 +16,7 @@ const percentValueHandler = computed(() => {
 </script>
 
 <template>
-  <div class="flex bg-red justify-center items-center flex-1 gap-5 w-[350px]">
+  <div class="flex justify-center items-center flex-1 gap-5 w-[350px]">
     <div>
       <Icon
         :name="icon"
@@ -24,7 +24,7 @@ const percentValueHandler = computed(() => {
       />
     </div>
     <div class="flex flex-col gap-1 self-end">
-      <div>{{ label }}</div>
+      <div class="font-medium dark:font-normal">{{ label }}</div>
       <div><SkillRange :percent-value="percentValueHandler" /></div>
     </div>
   </div>

@@ -4,7 +4,9 @@
       <h1 class="tracking-tight leading-tight w-full lg:w-10/12">
         Hello I'am Mohamad Yousef Eissa Front&minus;End Web Devoloper
       </h1>
-      <p class="w-full lg:w-8/12 xl:w-6/12 my-5">
+      <p
+        class="w-full lg:w-8/12 xl:w-6/12 my-5 text-stone-700 dark:text-stone-400"
+      >
         My journey in web development is driven by creativity and a keen eye for
         detail, ensuring every project I work on is both functional and
         beautiful.
@@ -20,14 +22,10 @@
 <style scoped>
 section {
   margin-top: 10rem;
-  margin-bottom: 15rem;
 }
 h1 {
   font-size: clamp(45px, 8vw, 72px);
   font-weight: bold;
-}
-p {
-  color: hsl(from var(--main-clr) h s l / 0.6);
 }
 
 button {

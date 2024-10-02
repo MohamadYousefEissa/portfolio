@@ -36,20 +36,11 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
-.cover {
-  width: 350px;
-  height: 260px;
-}
 .cover:before {
   background: radial-gradient(
     250px circle at var(--x) var(--y),
     var(--sec-clr) 0,
     transparent 100%
   );
-}
-@media screen and (max-width: 400px) {
-  .cover {
-    height: 70vw;
-  }
 }
 </style>

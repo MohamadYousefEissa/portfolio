@@ -34,6 +34,9 @@
               <a href="https://wa.me/+963936552400" target="_blank">
                 <Icon name="bi:whatsapp" />
               </a>
+              <div>
+                <UIThemeButton />
+              </div>
             </div>
           </div>
           <div class="w-full flex md:hidden justify-end">
@@ -54,6 +57,8 @@ nav {
   }
   a {
     transition: color 0.2s;
+    width: 18px;
+    height: 18px;
   }
   li > a:not(.router-link-active):hover {
     color: hsl(from var(--sec-clr) h s l / 0.6);

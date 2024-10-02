@@ -1,25 +1,25 @@
 <template>
-  <canvas
-    :style="{ isolation: 'isolate', height: '100%', width: '100%' }"
-    ref="canvasRef"
-  ></canvas>
+  <canvas ref="canvasRef"></canvas>
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
 import { NeatGradient } from "@firecms/neat";
+import { useTheme } from "~/store/theme";
 
 const canvasRef = ref<HTMLCanvasElement | null>(null);
 const gradientRef = ref<NeatGradient | null>(null);
-
-onMounted(() => {
+const theme = useTheme();
+const gradientBackground = computed(() => {
+  if (theme.value === "dark") return "#111";
+  return "#fff";
+});
+const generateGradient = (bgColor: string) => {
   if (!canvasRef.value) return;
-
   gradientRef.value = new NeatGradient({
     ref: canvasRef.value,
     colors: [
       {
-        color: "#18181b",
+        color: bgColor,
         enabled: false,
       },
 
@@ -36,13 +36,19 @@ onMounted(() => {
     waveAmplitude: 0,
     shadows: 0,
     highlights: 0,
-    colorBrightness: 0.5,
-    colorSaturation: 0,
+    colorBrightness: 1,
+    colorSaturation: -4,
     colorBlending: 10,
-    backgroundColor: "#18181b",
-    backgroundAlpha: 1,
     resolution: 1,
   });
+};
+watch(theme, () => {
+  gradientRef.value?.destroy();
+  if (theme.value === "dark") generateGradient("#111");
+  else generateGradient("#fff");
+});
+onMounted(() => {
+  generateGradient(gradientBackground.value);
 });
 </script>
 
@@ -51,7 +57,9 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh !important;
+  width: 100%;
+  height: 100vh;
+  isolation: isolate;
   z-index: -1;
 }
 </style>
