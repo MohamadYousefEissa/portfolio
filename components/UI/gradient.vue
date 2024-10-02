@@ -11,7 +11,7 @@ const gradientRef = ref<NeatGradient | null>(null);
 const theme = useTheme();
 const gradientBackground = computed(() => {
   if (theme.value === "dark") return "#111";
-  return "#fff";
+  return "whitesmoke";
 });
 const generateGradient = (bgColor: string) => {
   if (!canvasRef.value) return;
@@ -45,7 +45,7 @@ const generateGradient = (bgColor: string) => {
 watch(theme, () => {
   gradientRef.value?.destroy();
   if (theme.value === "dark") generateGradient("#111");
-  else generateGradient("#fff");
+  else generateGradient("whitesmoke");
 });
 onMounted(() => {
   generateGradient(gradientBackground.value);

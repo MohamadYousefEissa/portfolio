@@ -1,20 +1,20 @@
 <template>
   <header>
     <nav>
-      <div class="backdrop"></div>
+      <div class="backdrop" />
       <div
         class="container py-[1rem] md:py-[1.5rem] px-5 md:px-[2rem] lg:px-[10rem] mx-auto"
       >
         <div class="flex items-center">
           <div class="w-9/12">
-            <NuxtLink to="/" id="logo" class="leading-none">
+            <NuxtLink id="logo" to="/" class="leading-none">
               <p>MohamadYousefEissa</p>
               <p>Portfolio</p>
             </NuxtLink>
           </div>
           <div
-            class="w-full flex justify-between invisible translate-x-[80%] md:translate-x-0 md:visible opacity-0 md:opacity-100"
             id="nav-menu"
+            class="w-full flex justify-between invisible translate-x-[80%] md:translate-x-0 md:visible opacity-0 md:opacity-100"
           >
             <ul class="flex md:gap-6">
               <li><NuxtLink to="/">Home</NuxtLink></li>

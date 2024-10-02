@@ -30,7 +30,7 @@ onUnmounted(() => {
     <div
       class="flex-1 flex flex-col overflow-hidden rounded-xl divide-y divide-gray-200 dark:divide-gray-800 bg-white dark:bg-gray-900 hover:bg-opacity-90 dark:hover:bg-opacity-90 transition-[background-opacity] dark:bg-gradient-to-b from-gray-700/50 to-gray-900/50"
     >
-      <slot></slot>
+      <slot />
     </div>
   </div>
 </template>

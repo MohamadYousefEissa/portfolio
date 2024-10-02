@@ -56,5 +56,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/image", "@nuxt/icon"],
+  modules: ["@nuxt/image", "@nuxt/icon", "@nuxt/eslint"],
 });

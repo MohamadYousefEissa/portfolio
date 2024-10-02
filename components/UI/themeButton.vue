@@ -17,7 +17,7 @@ onMounted(() => {
 </script>
 <template>
   <label class="container md:ms-5 md:mt-[1px]">
-    <input type="checkbox" v-model="themeInputValue" ref="themeInput" />
+    <input ref="themeInput" v-model="themeInputValue" type="checkbox" />
     <svg
       viewBox="0 0 384 512"
       height="1em"

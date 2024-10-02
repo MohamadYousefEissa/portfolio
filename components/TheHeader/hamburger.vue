@@ -14,7 +14,7 @@ watch(hamburger, (checked) => {
 </script>
 <template>
   <label class="hamburger d-md-none">
-    <input type="checkbox" id="hamburger" v-model="hamburger" />
+    <input id="hamburger" v-model="hamburger" type="checkbox" />
     <svg viewBox="0 0 32 32">
       <path
         class="line line-top-bottom"

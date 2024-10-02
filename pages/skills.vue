@@ -11,6 +11,7 @@ import skills from "~/store/skills";
     >
       <Skill
         v-for="skill in skills"
+        :key="skill.label"
         :label="skill.label"
         :icon="skill.icon"
         :percent-value="skill.percentValue"

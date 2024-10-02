@@ -3,7 +3,7 @@ defineProps<{ percentValue: number }>();
 </script>
 <template>
   <div class="outer w-[50vw] md:w-[250px]">
-    <div class="inner" :style="{ width: percentValue + '%' }"></div>
+    <div class="inner" :style="{ width: percentValue + '%' }" />
   </div>
   <p>{{ percentValue }}%</p>
 </template>

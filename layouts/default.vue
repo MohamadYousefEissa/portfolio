@@ -1,7 +1,9 @@
 <template>
-  <UIGradient />
-  <TheHeader />
-  <main>
-    <slot></slot>
-  </main>
+  <div>
+    <UIGradient />
+    <TheHeader />
+    <main>
+      <slot />
+    </main>
+  </div>
 </template>
