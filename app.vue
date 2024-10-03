@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { useTheme } from "./store/theme";
-
+import { themeStore } from "./store/theme";
 onBeforeMount(() => {
-  const theme = useTheme();
-  theme.value = localStorage.getItem("theme") || "dark";
-  document.documentElement.classList.add(theme.value);
+  const useTheme = themeStore();
+  useTheme.theme = localStorage.getItem("theme") || "dark";
+  document.documentElement.className = useTheme.theme;
 });
 </script>
 <template>

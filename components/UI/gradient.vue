@@ -4,22 +4,33 @@
 
 <script setup lang="ts">
 import { NeatGradient } from "@firecms/neat";
-import { useTheme } from "~/store/theme";
-
+import { themeStore } from "~/store/theme";
 const canvasRef = ref<HTMLCanvasElement | null>(null);
 const gradientRef = ref<NeatGradient | null>(null);
-const theme = useTheme();
-const gradientBackground = computed(() => {
-  if (theme.value === "dark") return "#111";
-  return "whitesmoke";
+const useTheme = themeStore();
+const { theme } = storeToRefs(useTheme);
+const bgColor = ref<string>(useTheme.gradientColor);
+watch(theme, () => {
+  if (useTheme.theme === "dark") bgColor.value = "#111";
+  else bgColor.value = "#fff";
+  gradientRef.value!.colors = [
+    {
+      color: bgColor.value,
+      enabled: false,
+    },
+    {
+      color: "#38BDF8",
+      enabled: true,
+    },
+  ];
 });
-const generateGradient = (bgColor: string) => {
+onMounted(() => {
   if (!canvasRef.value) return;
   gradientRef.value = new NeatGradient({
     ref: canvasRef.value,
     colors: [
       {
-        color: bgColor,
+        color: bgColor.value,
         enabled: false,
       },
 
@@ -41,14 +52,6 @@ const generateGradient = (bgColor: string) => {
     colorBlending: 10,
     resolution: 1,
   });
-};
-watch(theme, () => {
-  gradientRef.value?.destroy();
-  if (theme.value === "dark") generateGradient("#111");
-  else generateGradient("whitesmoke");
-});
-onMounted(() => {
-  generateGradient(gradientBackground.value);
 });
 </script>
 

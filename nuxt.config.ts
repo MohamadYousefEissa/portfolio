@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
+  alias: {
+    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
+  },
   icon: {
     serverBundle: "local",
     customCollections: [
@@ -15,6 +18,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Mohamad Yousef Eissa Portfolio",
+      htmlAttrs: {
+        class: "dark",
+      },
       meta: [
         {
           name: "description",
@@ -56,5 +62,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/image", "@nuxt/icon", "@nuxt/eslint"],
+  modules: ["@nuxt/image", "@nuxt/icon", "@pinia/nuxt"],
+  pinia: {
+    storesDirs: ["./store/**"],
+  },
 });
