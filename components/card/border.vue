@@ -8,12 +8,12 @@ defineProps<{
 
 <template>
   <CardContainer>
-    <NuxtLink :to="to">
+    <a :href="to" target="_blank">
       <div
         class="flex flex-col flex-1 px-4 py-5 gap-x-8 gap-y-4 rounded-xl sm:p-6 dark:bg-gray-900/50"
       >
         <div>
-          <p class="text-base font-bold text-gray-900 truncate dark:text-white">
+          <p class="font-medium">
             {{ label }}
           </p>
           <div>
@@ -24,11 +24,13 @@ defineProps<{
               width="304"
               height="171"
               quality="100"
+              densities="x1"
+              :placeholder="[304, 171]"
               class="rounded-md mt-4"
             />
           </div>
         </div>
       </div>
-    </NuxtLink>
+    </a>
   </CardContainer>
 </template>

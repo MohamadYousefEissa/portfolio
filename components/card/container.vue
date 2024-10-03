@@ -24,7 +24,7 @@ onUnmounted(() => {
 <template>
   <div
     ref="cover"
-    class="cover relative isolate rounded-xl background-gradient ring-1 ring-gray-200 dark:ring-gray-800 before:hidden before:lg:block before:absolute before:-inset-[2px] before:h-[calc(100%+4px)] before:w-[calc(100%+4px)] before:z-[-1] before:rounded-[13px] flex flex-col shadow transition-shadow duration-200"
+    class="cover relative isolate rounded-xl background-gradient ring-1 ring-gray-300 dark:ring-gray-800 before:hidden before:lg:block before:absolute before:-inset-[2px] before:h-[calc(100%+4px)] before:w-[calc(100%+4px)] before:z-[-1] before:rounded-[13px] flex flex-col shadow transition-shadow duration-200"
     :style="{ '--x': x + 'px', '--y': y + 'px' }"
   >
     <div
@@ -38,7 +38,7 @@ onUnmounted(() => {
 <style scoped>
 .cover:before {
   background: radial-gradient(
-    250px circle at var(--x) var(--y),
+    300px circle at var(--x) var(--y),
     var(--sec-clr) 0,
     transparent 100%
   );

@@ -25,6 +25,16 @@ export default [
     to: "https://mohamadyousefeissa.github.io/Dallah-Media",
   },
   {
+    label: "Old Doha Port",
+    imgSrc: "/old-doha-port.jpg",
+    to: "https://mohamadyousefeissa.github.io/old-doha-port",
+  },
+  {
+    label: "Observer Animation",
+    imgSrc: "/observer.jpg",
+    to: "https://mohamadyousefeissa.github.io/observer-animation",
+  },
+  {
     label: "Simple E-Commerce",
     imgSrc: "/shop.jpg",
     to: "https://mohamadyousefeissa.github.io/bwp401-hw",
