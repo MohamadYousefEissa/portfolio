@@ -6,7 +6,7 @@
         class="container py-[1rem] md:py-[1.5rem] px-5 md:px-[2rem] lg:px-[10rem] mx-auto"
       >
         <div class="flex items-center">
-          <div class="w-9/12">
+          <div class="md:w-7/12 xl:w-9/12">
             <NuxtLink id="logo" to="/" class="leading-none">
               <p>MohamadYousefEissa</p>
               <p>Portfolio</p>
@@ -56,9 +56,9 @@ nav {
     font-weight: bold;
   }
   a {
-    transition: color 0.2s;
     width: 18px;
     height: 18px;
+    transition: color 0.15s;
   }
   li > a:not(.router-link-active):hover {
     color: hsl(from var(--sec-clr) h s l / 0.6);

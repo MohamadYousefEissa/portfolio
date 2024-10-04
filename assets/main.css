@@ -18,7 +18,7 @@ html.light {
 }
 
 ::-webkit-scrollbar {
-  width: 0.65vw;
+  width: 9px;
   background-color: var(--bar-bg);
 }
 ::-webkit-scrollbar-thumb {
