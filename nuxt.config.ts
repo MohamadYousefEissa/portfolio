@@ -20,6 +20,7 @@ export default defineNuxtConfig({
       title: "Mohamad Yousef Eissa Portfolio",
       htmlAttrs: {
         class: "dark",
+        lang: "en",
       },
       meta: [
         {

@@ -25,13 +25,22 @@
               <a
                 href="https://www.linkedin.com/in/mohamad-yousef-eissa-381a6429a/"
                 target="_blank"
+                aria-label="hidden"
               >
                 <Icon name="bi:linkedin" />
               </a>
-              <a href="https://github.com/MohamadYousefEissa" target="_blank">
+              <a
+                href="https://github.com/MohamadYousefEissa"
+                target="_blank"
+                aria-label="hidden"
+              >
                 <Icon name="bi:github" />
               </a>
-              <a href="https://wa.me/+963936552400" target="_blank">
+              <a
+                href="https://wa.me/+963936552400"
+                target="_blank"
+                aria-label="hidden"
+              >
                 <Icon name="bi:whatsapp" />
               </a>
               <div>
