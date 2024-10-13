@@ -1,4 +1,10 @@
-export default [
+interface Skill {
+  label: string;
+  icon: string;
+  percentValue: number;
+}
+
+const skills = [
   {
     label: "Nuxt",
     icon: "vscode-icons:file-type-nuxt",
@@ -40,6 +46,11 @@ export default [
     percentValue: 95,
   },
   {
+    label: "DaisyUI",
+    icon: "logos:daisyui-icon",
+    percentValue: 95,
+  },
+  {
     label: "Bootstrap",
     icon: "devicon:bootstrap",
     percentValue: 99,
@@ -52,12 +63,12 @@ export default [
   {
     label: "HTML",
     icon: "devicon:html5",
-    percentValue: 99,
+    percentValue: 100,
   },
   {
     label: "jQuery",
     icon: "devicon:jquery",
-    percentValue: 60,
+    percentValue: 40,
   },
   {
     label: "Github",
@@ -82,7 +93,7 @@ export default [
   {
     label: "GSAP",
     icon: "icons:gsap-logo",
-    percentValue: 95,
+    percentValue: 90,
   },
   {
     label: "Firebase",
@@ -92,7 +103,7 @@ export default [
   {
     label: "API",
     icon: "material-symbols:api",
-    percentValue: 99,
+    percentValue: 100,
   },
   {
     label: "C#",
@@ -106,8 +117,6 @@ export default [
   },
 ] as Skill[];
 
-interface Skill {
-  label: string;
-  icon: string;
-  percentValue: number;
-}
+export default defineEventHandler(() => {
+  return skills;
+});

@@ -1,4 +1,4 @@
-export default [
+const projects = [
   {
     label: "Codesmos",
     imgSrc: "/codesmos.jpg",
@@ -50,3 +50,6 @@ export default [
     to: "https://password-generator-mye.netlify.app",
   },
 ];
+export default defineEventHandler(() => {
+  return projects;
+});

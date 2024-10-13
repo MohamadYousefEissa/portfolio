@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import skills from "~/store/skills";
+const { data: skills } = await useFetch("/api/skills");
 </script>
 <template>
   <div class="container mx-auto px-5 md:px-[2rem] mt-10">

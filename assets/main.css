@@ -28,7 +28,9 @@ html.light {
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(from var(--bar-clr) h s l / 0.8);
 }
-
+.nuxt-loading-indicator {
+  background: var(--sec-clr) !important;
+}
 main {
   margin-bottom: 5rem;
 }

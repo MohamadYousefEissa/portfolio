@@ -21,6 +21,7 @@ onMounted(() => {
       v-model="themeInputValue"
       type="checkbox"
       aria-label="hidden"
+      id="theme-btn"
     />
     <svg
       viewBox="0 0 384 512"
