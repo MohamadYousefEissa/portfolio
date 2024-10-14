@@ -16,7 +16,7 @@ const percentValueHandler = computed(() => {
 </script>
 
 <template>
-  <div class="flex justify-center items-center flex-1 gap-5 w-[350px]">
+  <div class="flex justify-center items-center flex-1 gap-5">
     <div>
       <Icon
         :name="icon"

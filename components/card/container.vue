@@ -38,7 +38,7 @@ onUnmounted(() => {
 <style scoped>
 .cover:before {
   background: radial-gradient(
-    300px circle at var(--x) var(--y),
+    250px circle at var(--x) var(--y),
     var(--sec-clr) 0,
     transparent 100%
   );

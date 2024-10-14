@@ -25,7 +25,7 @@ html.dark .outer {
   background-color: var(--sec-clr);
 }
 p {
-  color: hsl(from var(--sec-clr) h s l / 0.7);
+  color: var(--sec-clr);
   font-size: 14px;
   text-align: end;
 }

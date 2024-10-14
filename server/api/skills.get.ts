@@ -1,9 +1,4 @@
-interface Skill {
-  label: string;
-  icon: string;
-  percentValue: number;
-}
-
+import { type Skill } from "~/interfaces/types";
 const skills = [
   {
     label: "Nuxt",
