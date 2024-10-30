@@ -1,12 +1,18 @@
 <script setup lang="ts">
-import { useFilteredSkills, useSkills } from "~/store/filteredSkills";
+import {
+  useFilteredSkills,
+  useSkills,
+  useInputValue,
+} from "~/store/filteredSkills";
 const filteredSkills = useFilteredSkills();
 const skills = useSkills();
+const storeInputValue = useInputValue();
 const inputValue = ref<string>("");
 const timeout = ref();
 watch(inputValue, () => {
   clearTimeout(timeout.value);
   timeout.value = setTimeout(() => {
+    storeInputValue.value = inputValue.value;
     filteredSkills.value = skills.value.filter((skill) => {
       return (
         skill.label

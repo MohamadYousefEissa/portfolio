@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { type Skill } from "~/interfaces/types";
 const { data } = await useFetch("/api/skills");
-import { useFilteredSkills, useSkills } from "~/store/filteredSkills";
+import {
+  useFilteredSkills,
+  useSkills,
+  useInputValue,
+} from "~/store/filteredSkills";
 const filteredSkills = useFilteredSkills();
 const skills = useSkills();
+const inputValue = useInputValue();
 filteredSkills.value = data.value as Skill[];
 skills.value = data.value as Skill[];
 </script>
@@ -28,14 +33,14 @@ skills.value = data.value as Skill[];
         />
       </transition-group>
     </div>
+    <div
+      class="text-center md:text-start lg:ms-[4rem] xl:ms-[1rem] 2xl:ms-[4rem]"
+      v-if="filteredSkills.length === 0"
+    >
+      No Skills Found as <span class="font-bold">' {{ inputValue }} '</span>
+    </div>
   </div>
 </template>
-
-<style>
-body {
-  overflow-y: scroll;
-}
-</style>
 
 <style scoped>
 .fade-list-enter-from,

@@ -8,8 +8,8 @@ watch(hamburger, (checked) => {
   navMenu.classList.toggle("invisible");
   navMenu.classList.toggle("opacity-0");
   navMenu.classList.toggle("translate-x-[80%]");
-  if (checked) document.body.style.overflow = "hidden";
-  else document.body.style.overflow = "auto";
+  if (checked) document.body.style.overflowY = "hidden";
+  else document.body.style.overflowY = "scroll";
 });
 </script>
 <template>

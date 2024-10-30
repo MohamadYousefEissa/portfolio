@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         { name: "author", content: "Mohamad Yousef Eissa" },
         {
           name: "copyright",
-          content: `Powered by Mohamad Yousef Eissa © ${new Date().getFullYear()} | All Rights Reserved`,
+          content: `Powered by Mohamad Yousef Eissa © 2024 | All Rights Reserved`,
         },
         { name: "robots", content: "index, follow" },
         {

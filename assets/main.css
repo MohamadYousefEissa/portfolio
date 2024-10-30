@@ -44,6 +44,7 @@ body {
   background-color: var(--main-bg);
   color: var(--main-clr);
   font-family: var(--font-family);
+  overflow-y: scroll;
 }
 
 ul {
