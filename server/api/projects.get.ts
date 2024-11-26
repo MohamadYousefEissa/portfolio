@@ -25,6 +25,11 @@ const projects = [
     to: "https://mohamadyousefeissa.github.io/Dallah-Media",
   },
   {
+    label: "North Oil Company",
+    imgSrc: "/north-oil.jpg",
+    to: "https://mohamadyousefeissa.github.io/north-oil-project",
+  },
+  {
     label: "Old Doha Port",
     imgSrc: "/old-doha-port.jpg",
     to: "https://mohamadyousefeissa.github.io/old-doha-port",

@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
   },
   icon: {
-    serverBundle: "local",
+    serverBundle: "remote",
     customCollections: [
       {
         prefix: "icons",

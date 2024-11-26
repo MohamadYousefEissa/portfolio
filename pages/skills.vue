@@ -21,7 +21,7 @@ skills.value = data.value as Skill[];
       <SkillInput />
     </div>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-[4rem] md:gap-[5rem]"
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-[2rem] md:gap-[5rem]"
     >
       <transition-group name="fade-list">
         <Skill

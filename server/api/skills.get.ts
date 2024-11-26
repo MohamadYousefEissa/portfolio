@@ -1,14 +1,24 @@
 import { type Skill } from "~/interfaces/types";
 const skills = [
   {
+    label: "Flutter",
+    icon: "devicon:flutter",
+    percentValue: 95,
+  },
+  {
+    label: "Dart",
+    icon: "logos:dart",
+    percentValue: 80,
+  },
+  {
     label: "Nuxt",
     icon: "vscode-icons:file-type-nuxt",
-    percentValue: 90,
+    percentValue: 92,
   },
   {
     label: "Vue",
     icon: "logos:vue",
-    percentValue: 95,
+    percentValue: 97,
   },
   {
     label: "Pinia",
@@ -23,22 +33,22 @@ const skills = [
   {
     label: "TypeScript",
     icon: "devicon:typescript",
-    percentValue: 90,
+    percentValue: 94,
   },
   {
     label: "JavaScript",
     icon: "logos:javascript",
-    percentValue: 95,
+    percentValue: 96,
   },
   {
     label: "Sass",
     icon: "logos:sass",
-    percentValue: 99,
+    percentValue: 98,
   },
   {
     label: "Tailwind CSS",
     icon: "devicon:tailwindcss",
-    percentValue: 95,
+    percentValue: 96,
   },
   {
     label: "DaisyUI",
@@ -60,25 +70,21 @@ const skills = [
     icon: "devicon:html5",
     percentValue: 100,
   },
-  {
-    label: "jQuery",
-    icon: "devicon:jquery",
-    percentValue: 40,
-  },
+
   {
     label: "Github",
     icon: "mdi:github",
-    percentValue: 70,
+    percentValue: 75,
   },
   {
     label: "Nodejs",
     icon: "devicon:nodejs",
-    percentValue: 50,
+    percentValue: 40,
   },
   {
     label: "Threejs",
     icon: "skill-icons:threejs-dark",
-    percentValue: 40,
+    percentValue: 35,
   },
   {
     label: "Swiper",
@@ -99,6 +105,11 @@ const skills = [
     label: "API",
     icon: "material-symbols:api",
     percentValue: 100,
+  },
+  {
+    label: "jQuery",
+    icon: "devicon:jquery",
+    percentValue: 40,
   },
   {
     label: "C#",
