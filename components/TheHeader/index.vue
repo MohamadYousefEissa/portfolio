@@ -60,15 +60,13 @@
 <style scoped>
 nav {
   background-color: hsl(from var(--main-bg) h s l / 0.1);
-  li > .router-link-active {
-    color: var(--sec-clr);
-    font-weight: bold;
-  }
+
   a {
     width: 18px;
     height: 18px;
     transition: color 0.15s;
   }
+
   li > a:not(.router-link-active):hover {
     color: hsl(from var(--sec-clr) h s l / 0.6);
   }
@@ -100,7 +98,7 @@ li {
     padding: 0 0 1rem 0;
     flex-direction: column;
     backdrop-filter: blur(10px);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   #nav-menu ul {
     display: grid;

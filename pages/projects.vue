@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const { data: projects } = await useFetch("/api/projects");
+import { useProjectsStore } from "~/store/projects";
+
+const projectStore = useProjectsStore();
 </script>
 <template>
   <div class="container mx-auto px-2 lg:px-[2rem] mt-10">
@@ -8,7 +10,7 @@ const { data: projects } = await useFetch("/api/projects");
     </h1>
     <div class="flex flex-wrap justify-center gap-10 md:gap-5 lg:gap-10">
       <CardBorder
-        v-for="project in projects"
+        v-for="project in projectStore.projects"
         :key="project.label"
         :label="project.label"
         :img-src="project.imgSrc"

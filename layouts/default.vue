@@ -3,7 +3,7 @@
     <UIGradient />
     <TheHeader />
     <main>
-      <slot />
+      <slot></slot>
     </main>
   </div>
 </template>

@@ -1,4 +1,4 @@
-export const themeStore = defineStore("theme", {
+export const useThemeStore = defineStore("theme", {
   state: () => ({ theme: "dark" }),
   getters: {
     gradientColor() {

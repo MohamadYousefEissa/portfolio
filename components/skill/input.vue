@@ -1,27 +1,15 @@
 <script setup lang="ts">
-import {
-  useFilteredSkills,
-  useSkills,
-  useInputValue,
-} from "~/store/filteredSkills";
-const filteredSkills = useFilteredSkills();
-const skills = useSkills();
-const storeInputValue = useInputValue();
+import { useSkillsStore } from "~/store/skills";
+
+const skillStore = useSkillsStore();
 const inputValue = ref<string>("");
 const timeout = ref();
+
 watch(inputValue, () => {
   clearTimeout(timeout.value);
   timeout.value = setTimeout(() => {
-    storeInputValue.value = inputValue.value;
-    filteredSkills.value = skills.value.filter((skill) => {
-      return (
-        skill.label
-          .toLowerCase()
-          .replace(" ", "")
-          .indexOf(inputValue.value.toLowerCase().replace(" ", "")) !== -1
-      );
-    });
-  }, 500);
+    skillStore.filterSkills(inputValue.value);
+  }, 300);
 });
 </script>
 <template>
@@ -31,7 +19,7 @@ watch(inputValue, () => {
     <label
       class="flex relative items-center border-2 dark:border rounded-md pe-6 w-10/12 md:w-[325px]"
       for="search-input"
-      aria-label="hidden"
+      aria-label="search-icon"
     >
       <Icon
         name="material-symbols:search"

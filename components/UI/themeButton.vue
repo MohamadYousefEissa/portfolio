@@ -1,16 +1,17 @@
 <script setup lang="ts">
-import { themeStore } from "~/store/theme";
+import { useThemeStore } from "~/store/theme";
 const themeInput = ref<HTMLInputElement>();
 const themeInputValue = ref(true);
-const useTheme = themeStore();
+const themeStore = useThemeStore();
+
 onMounted(() => {
-  themeInputValue.value = useTheme.theme === "dark";
+  themeInputValue.value = themeStore.theme === "dark";
   themeInput.value?.addEventListener("change", () => {
     if (themeInputValue.value) {
       document.documentElement.className = "dark";
     } else document.documentElement.className = "light";
-    useTheme.theme = document.documentElement.className;
-    localStorage.setItem("theme", useTheme.theme);
+    themeStore.theme = document.documentElement.className;
+    localStorage.setItem("theme", themeStore.theme);
   });
 });
 </script>

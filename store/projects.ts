@@ -1,3 +1,9 @@
+export const useProjectsStore = defineStore("projects", {
+  state: () => ({
+    projects: projects,
+  }),
+});
+
 const projects = [
   {
     label: "Codesmos",
@@ -55,6 +61,3 @@ const projects = [
     to: "https://password-generator-mye.netlify.app",
   },
 ];
-export default defineEventHandler(() => {
-  return projects;
-});

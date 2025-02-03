@@ -4,14 +4,14 @@
 
 <script setup lang="ts">
 import { NeatGradient } from "@firecms/neat";
-import { themeStore } from "~/store/theme";
+import { useThemeStore } from "~/store/theme";
 const canvasRef = ref<HTMLCanvasElement | null>(null);
 const gradientRef = ref<NeatGradient | null>(null);
-const useTheme = themeStore();
-const { theme } = storeToRefs(useTheme);
-const bgColor = ref<string>(useTheme.gradientColor);
+const themeStore = useThemeStore();
+const { theme } = storeToRefs(themeStore);
+const bgColor = ref<string>(themeStore.gradientColor);
 watch(theme, () => {
-  if (useTheme.theme === "dark") bgColor.value = "#111";
+  if (themeStore.theme === "dark") bgColor.value = "#111";
   else bgColor.value = "#fff";
   gradientRef.value!.colors = [
     {

@@ -22,7 +22,11 @@ html.dark .outer {
 }
 .inner {
   height: 100%;
-  background-color: var(--sec-clr);
+  background: linear-gradient(
+    90deg,
+    hsl(from var(--sec-clr) h s l / 0.8),
+    var(--sec-clr)
+  );
 }
 p {
   color: var(--sec-clr);

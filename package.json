@@ -15,6 +15,7 @@
     "@nuxt/image": "^1.8.1",
     "@pinia/nuxt": "^0.5.5",
     "nuxt": "^3.13.0",
+    "pinia": "^2.3.1",
     "three.js": "^0.77.1",
     "vue": "latest",
     "vue-router": "latest"

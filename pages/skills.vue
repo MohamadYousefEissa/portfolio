@@ -1,16 +1,7 @@
 <script setup lang="ts">
-import { type Skill } from "~/interfaces/types";
-const { data } = await useFetch("/api/skills");
-import {
-  useFilteredSkills,
-  useSkills,
-  useInputValue,
-} from "~/store/filteredSkills";
-const filteredSkills = useFilteredSkills();
-const skills = useSkills();
-const inputValue = useInputValue();
-filteredSkills.value = data.value as Skill[];
-skills.value = data.value as Skill[];
+import { useSkillsStore } from "~/store/skills";
+
+const skillsStore = useSkillsStore();
 </script>
 <template>
   <div class="container mx-auto px-5 md:px-[2rem] mt-10">
@@ -25,7 +16,7 @@ skills.value = data.value as Skill[];
     >
       <transition-group name="fade-list">
         <Skill
-          v-for="skill in filteredSkills"
+          v-for="skill in skillsStore.skills"
           :key="skill.label"
           :label="skill.label"
           :icon="skill.icon"
@@ -35,9 +26,9 @@ skills.value = data.value as Skill[];
     </div>
     <div
       class="text-center md:text-start lg:ms-[4rem] xl:ms-[1rem] 2xl:ms-[4rem]"
-      v-if="filteredSkills.length === 0"
+      v-if="skillsStore.skills.length === 0"
     >
-      No Skills Found as <span class="font-bold">' {{ inputValue }} '</span>
+      No Skills Found
     </div>
   </div>
 </template>

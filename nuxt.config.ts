@@ -3,11 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
-  alias: {
-    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
-  },
   icon: {
-    serverBundle: "remote",
     customCollections: [
       {
         prefix: "icons",
